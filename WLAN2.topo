@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="D6362BEF-97A5-4afd-8DA8-D6047927269B" name="AP1" poe="0" model="AP4050" settings=" -apMac 00-E0-FC-90-38-A0 -apSN 2102354483103613B262" system_mac="00-E0-FC-90-38-A0" com_port="2002" bootmode="0" cx="300.000000" cy="284.000000" edit_left="327" edit_top="338">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="F718AF27-E57C-4556-A061-C2D9E1388545" name="S1" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-25-10-FC" com_port="2000" bootmode="0" cx="684.000000" cy="39.000000" edit_left="715" edit_top="30">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="18E999FE-BB2C-4f75-9267-B9B084E24154" name="S2" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-EB-66-F2" com_port="2001" bootmode="0" cx="684.000000" cy="284.000000" edit_left="743" edit_top="309">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="5A112E13-333B-4206-9BE3-B8D46CEF7393" name="AC1" poe="0" model="AC6605" settings="" system_mac="00-E0-FC-16-21-EB" com_port="2003" bootmode="0" cx="300.000000" cy="39.000000" edit_left="327" edit_top="93">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="6BC46E3B-DDBA-42ce-B8F5-8536FCD603C3" name="AP2" poe="0" model="AP4050" settings=" -apMac 00-E0-FC-AF-6D-B0 -apSN 2102354483100033BC0C" system_mac="00-E0-FC-AF-6D-B0" com_port="2004" bootmode="0" cx="507.000000" cy="612.000000" edit_left="534" edit_top="666">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="88F2F328-AF25-439a-A5DE-928FC8F9CCD9" name="STA1" poe="0" model="STA" settings=" -simsta_ip 0.0.0.0  -simsta_mask 0.0.0.0  -simsta_gateway 0.0.0.0  -simsta_mac 54-89-98-74-7B-D8  -simsta_check 0 " system_mac="54-89-98-74-7B-D8" com_port="0" bootmode="0" cx="179.000000" cy="414.000000" edit_left="206" edit_top="468">
+            <slot number="slot17" isMainBoard="1" />
+        </dev>
+        <dev id="9039B41C-5909-4528-A317-788B01CB940D" name="STA2" poe="0" model="STA" settings=" -simsta_ip 0.0.0.0  -simsta_mask 0.0.0.0  -simsta_gateway 0.0.0.0  -simsta_mac 54-89-98-F6-65-78  -simsta_check 0 " system_mac="54-89-98-F6-65-78" com_port="0" bootmode="0" cx="369.000000" cy="546.000000" edit_left="396" edit_top="600">
+            <slot number="slot17" isMainBoard="1" />
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="F718AF27-E57C-4556-A061-C2D9E1388545" destDeviceID="18E999FE-BB2C-4f75-9267-B9B084E24154">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="711.000000" srcBoundRect_Y="109.183769" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="1" tarBoundRectIsMoved="0" tarBoundRect_X="711.000000" tarBoundRect_Y="267.816223" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="5A112E13-333B-4206-9BE3-B8D46CEF7393" destDeviceID="F718AF27-E57C-4556-A061-C2D9E1388545">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="370.183777" srcBoundRect_Y="66.000000" srcOffset_X="-14.000000" srcOffset_Y="4.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="667.816223" tarBoundRect_Y="66.000000" tarOffset_X="-41.000000" tarOffset_Y="6.000000" />
+        </line>
+        <line srcDeviceID="18E999FE-BB2C-4f75-9267-B9B084E24154" destDeviceID="D6362BEF-97A5-4afd-8DA8-D6047927269B">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="667.816223" srcBoundRect_Y="311.000000" srcOffset_X="-36.000000" srcOffset_Y="5.000000" tarIndex="1" tarBoundRectIsMoved="0" tarBoundRect_X="370.183777" tarBoundRect_Y="311.000000" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="18E999FE-BB2C-4f75-9267-B9B084E24154" destDeviceID="6BC46E3B-DDBA-42ce-B8F5-8536FCD603C3">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="690.492065" srcBoundRect_Y="349.003448" srcOffset_X="1.000000" srcOffset_Y="9.000000" tarIndex="1" tarBoundRectIsMoved="0" tarBoundRect_X="554.507935" tarBoundRect_Y="600.996582" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="239" top="232" right="424" bottom="280" content="MAC: 00-E0-FC-90-38-A0&#x0D;&#x0A;&#x0D;&#x0A;SN: 2102354483103613B262" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1193" top="8" right="1454" bottom="197" content="sys&#x0D;&#x0A;sysn S1&#x0D;&#x0A;vlan batch 100 101&#x0D;&#x0A;&#x0D;&#x0A;int gi0/0/1&#x0D;&#x0A;port link-type trunk&#x0D;&#x0A;port trunk allow-pass vlan 100 101&#x0D;&#x0A;&#x0D;&#x0A;int gi0/0/2&#x0D;&#x0A;port link-type trunk&#x0D;&#x0A;port trunk allow-pass vlan 100 101&#x0D;&#x0A;" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1196" top="218" right="1457" bottom="500" content="sys&#x0D;&#x0A;sysn S2&#x0D;&#x0A;vlan batch 100 101&#x0D;&#x0A;&#x0D;&#x0A;int gi0/0/1&#x0D;&#x0A;port link-type trunk&#x0D;&#x0A;port trunk pvid vlan 100&#x0D;&#x0A;port trunk allow-pass vlan 100 101&#x0D;&#x0A;&#x0D;&#x0A;int gi0/0/2&#x0D;&#x0A;port link-type trunk&#x0D;&#x0A;port trunk allow-pass vlan 100 101&#x0D;&#x0A;&#x0D;&#x0A;int gi0/0/3&#x0D;&#x0A;port link-type trunk&#x0D;&#x0A;port trunk pvid vlan 100&#x0D;&#x0A;port trunk allow-pass vlan 100 101&#x0D;&#x0A;" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="822" top="11" right="1188" bottom="871" content="sys&#x0D;&#x0A;sysn AC1&#x0D;&#x0A;vlan batch 100 101&#x0D;&#x0A;&#x0D;&#x0A;int gi0/0/1&#x0D;&#x0A;port link-type trunk&#x0D;&#x0A;port trunk allow-pass vlan 100 101&#x0D;&#x0A;q&#x0D;&#x0A;&#x0D;&#x0A;dhcp enable&#x0D;&#x0A;&#x0D;&#x0A;int vlan 100&#x0D;&#x0A;ip add 192.168.100.1 24&#x0D;&#x0A;dhcp select int&#x0D;&#x0A;&#x0D;&#x0A;int vlan 101&#x0D;&#x0A;ip add 192.168.101.1 24&#x0D;&#x0A;dhcp select int&#x0D;&#x0A;q&#x0D;&#x0A;&#x0D;&#x0A;capwap source int vlan 100&#x0D;&#x0A;&#x0D;&#x0A;wlan&#x0D;&#x0A;ap-group name GROUP1&#x0D;&#x0A;q&#x0D;&#x0A;ap auth-mode mac-auth&#x0D;&#x0A;q&#x0D;&#x0A;ap-id 0 ap-mac 00E0-FC90-38A0 &#x0D;&#x0A;ap-id 0 ap-sn 2102354483103613B262&#x0D;&#x0A;ap-name AP1&#x0D;&#x0A;ap-group GROUP1&#x0D;&#x0A;q&#x0D;&#x0A;ap-id 2 ap-mac 00E0-FCAF-6DB0 &#x0D;&#x0A;ap-id 2 ap-sn 2102354483100033BC0C&#x0D;&#x0A;ap-name AP2&#x0D;&#x0A;ap-group GROUP1&#x0D;&#x0A;Y&#x0D;&#x0A;q&#x0D;&#x0A;security-profile name HCIA&#x0D;&#x0A;security wpa-wpa2 psk pass-phrase Huawei@123 aes&#x0D;&#x0A;q&#x0D;&#x0A;ssid-profile name HCIA&#x0D;&#x0A;ssid HCIA&#x0D;&#x0A;q&#x0D;&#x0A;vap-profile name HCIA&#x0D;&#x0A;forward-mode direct-forward&#x0D;&#x0A;service-vlan vlan-id 101&#x0D;&#x0A;security-profile HCIA&#x0D;&#x0A;ssid-profile HCIA&#x0D;&#x0A;q&#x0D;&#x0A;ap-group name GROUP1&#x0D;&#x0A;vap-profile HCIA wlan 1 radio all&#x0D;&#x0A;q&#x0D;&#x0A;q&#x0D;&#x0A;" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
